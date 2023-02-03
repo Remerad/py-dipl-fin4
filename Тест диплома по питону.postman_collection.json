@@ -6,13 +6,81 @@
 	},
 	"item": [
 		{
+			"name": "user/register byer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Boris\",\r\n    \"last_name\": \"Razor\",\r\n    \"email\": \"test2@test.test\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"TestCompany\",\r\n    \"position\": \"Manager\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/register shop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"first_name\": \"Igor\",\r\n    \"last_name\": \"Shop\",\r\n    \"email\": \"shop2@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"shopCompany\",\r\n    \"position\": \"Manager\",\r\n    \"type\": \"shop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "user/register/confirm",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"first_name\": \"Boris\",\r\n    \"last_name\": \"Razor\",\r\n    \"email\": \"test4@test.test\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"TestCompany\",\r\n    \"position\": \"Manager\",\r\n    \"token\":\"12a7aaa0d1ba675a1ef2\"\r\n}",
+					"raw": "{\r\n    \"email\": \"shop3@shop.shop\",\r\n    \"token\": \"5d96861d60568d2eb7a2c635bc52d1e055d0786c\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,40 +109,6 @@
 			"response": []
 		},
 		{
-			"name": "user/register",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"first_name\": \"Boris\",\r\n    \"last_name\": \"Razor\",\r\n    \"email\": \"test4@test.test\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"TestCompany\",\r\n    \"position\": \"Manager\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/register",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"register"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "user/details",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -87,7 +121,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token 9c9fc623268aad83ebb6f98d4b742cce7f6cebb6",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
 						"type": "default"
 					}
 				],
@@ -121,13 +155,13 @@
 			"response": []
 		},
 		{
-			"name": "user/login",
+			"name": "user/login byer",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"test4@test.test\",\r\n    \"password\": \"qweRazorrty12TestCompany3\"\r\n}",
+					"raw": "{\r\n    \"email\": \"test2@test.test\",\r\n    \"password\": \"qweRazorrty12TestCompany3\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -149,6 +183,573 @@
 						"v1",
 						"user",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/login shop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"shop@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"test4@test.test\",\r\n    \"city\": \"Msk\",\r\n    \"street\": \"Ленина\",\r\n    \"house\": \"2\",\r\n    \"structure\": \"1\",\r\n    \"building\": \"5\",\r\n    \"apartment\": \"123\",\r\n    \"phone\": \"8(945)1231212\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/contact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/contact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"street\": \"Строителей\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/contact",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/password_reset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test2@test.test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/password_reset",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"password_reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/password_reset/confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token fcfa13a7d2237bc92464a316e576f2a7d751ce52",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"token\": \"fcfa13a7d2237bc92464a316e576f2a7d751ce52\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/password_reset/confirm",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"password_reset",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partner/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"5d96861d60568d2eb7a2c635bc52d1e055d0786c\",\r\n    \"url\": \"https://raw.githubusercontent.com/netology-code/python-final-diplom/master/data/shop1.yaml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/partner/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"partner",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partner/state",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/partner/state",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"partner",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partner/state",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"state\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/partner/state",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"partner",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partner/orders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/partner/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"partner",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shops",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/shops",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "basket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/basket",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"basket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "basket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": \r\n        [\r\n            {\"product_info\": 1,\r\n            \"quantity\": 2}\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/basket",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"basket"
 					]
 				}
 			},
