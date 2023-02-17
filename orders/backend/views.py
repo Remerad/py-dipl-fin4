@@ -177,7 +177,7 @@ class ProductInfoView(APIView):
         if category_id:
             query = query & Q(product__category_id=category_id)
 
-        # фильтруем и отбрасываем дуликаты
+        # фильтруем и отбрасываем дубликаты
         queryset = ProductInfo.objects.filter(
             query).select_related(
             'shop', 'product__category').prefetch_related(
@@ -214,7 +214,8 @@ class BasketView(APIView):
         items_sting = request.data.get('items')
         if items_sting:
             try:
-                items_dict = load_json(items_sting)
+                # items_dict = load_json(items_sting)   # Я не понял, зачем это. Заказ должен поступать через URL, а не JSON?
+                items_dict = items_sting
             except ValueError:
                 JsonResponse({'Status': False, 'Errors': 'Неверный формат запроса'})
             else:
@@ -230,9 +231,7 @@ class BasketView(APIView):
                             return JsonResponse({'Status': False, 'Errors': str(error)})
                         else:
                             objects_created += 1
-
                     else:
-
                         JsonResponse({'Status': False, 'Errors': serializer.errors})
 
                 return JsonResponse({'Status': True, 'Создано объектов': objects_created})
@@ -267,18 +266,23 @@ class BasketView(APIView):
         items_sting = request.data.get('items')
         if items_sting:
             try:
-                items_dict = load_json(items_sting)
+                # items_dict = load_json(items_sting)
+                items_dict = items_sting
             except ValueError:
                 JsonResponse({'Status': False, 'Errors': 'Неверный формат запроса'})
             else:
                 basket, _ = Order.objects.get_or_create(user_id=request.user.id, state='basket')
                 objects_updated = 0
+                # respDict = {}
                 for order_item in items_dict:
+                    # respDict.update(order_item)
                     if type(order_item['id']) == int and type(order_item['quantity']) == int:
                         objects_updated += OrderItem.objects.filter(order_id=basket.id, id=order_item['id']).update(
                             quantity=order_item['quantity'])
 
+                # return JsonResponse({'Status': True, 'Обновлено объектов': respDict})
                 return JsonResponse({'Status': True, 'Обновлено объектов': objects_updated})
+
         return JsonResponse({'Status': False, 'Errors': 'Не указаны все необходимые аргументы'})
 
 

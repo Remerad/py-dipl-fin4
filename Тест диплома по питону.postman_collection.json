@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ef42676a-5237-43f2-8047-b9af44616839",
 		"name": "Тест диплома по питону",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -19,23 +19,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/register",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"register"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/register"
 			},
 			"response": []
 		},
@@ -46,30 +30,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n     \"first_name\": \"Igor\",\r\n    \"last_name\": \"Shop\",\r\n    \"email\": \"shop2@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"shopCompany\",\r\n    \"position\": \"Manager\",\r\n    \"type\": \"shop\"\r\n}",
+					"raw": "{\r\n     \"first_name\": \"Igor\",\r\n    \"last_name\": \"Shop\",\r\n    \"email\": \"shop3@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\",\r\n    \"company\": \"shopCompany\",\r\n    \"position\": \"Manager\",\r\n    \"type\": \"shop\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/register",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"register"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/register"
 			},
 			"response": []
 		},
@@ -87,24 +55,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/register/confirm",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"register",
-						"confirm"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/register/confirm"
 			},
 			"response": []
 		},
@@ -134,23 +85,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/details",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"details"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/details"
 			},
 			"response": []
 		},
@@ -168,23 +103,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/login",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"login"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/login"
 			},
 			"response": []
 		},
@@ -195,30 +114,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"shop@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\"\r\n}",
+					"raw": "{\r\n    \"email\": \"shop3@shop.shop\",\r\n    \"password\": \"qweRazorrty12TestCompany3\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/login",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"login"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/login"
 			},
 			"response": []
 		},
@@ -242,23 +145,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"contact"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/contact"
 			},
 			"response": []
 		},
@@ -273,23 +160,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"contact"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/contact"
 			},
 			"response": []
 		},
@@ -313,23 +184,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"contact"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/contact"
 			},
 			"response": []
 		},
@@ -353,23 +208,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/contact",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"contact"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/contact"
 			},
 			"response": []
 		},
@@ -393,23 +232,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/password_reset",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"password_reset"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/password_reset"
 			},
 			"response": []
 		},
@@ -433,24 +256,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/user/password_reset/confirm",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"password_reset",
-						"confirm"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/user/password_reset/confirm"
 			},
 			"response": []
 		},
@@ -474,23 +280,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/partner/update",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"partner",
-						"update"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/partner/update"
 			},
 			"response": []
 		},
@@ -505,23 +295,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/partner/state",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"partner",
-						"state"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/partner/state"
 			},
 			"response": []
 		},
@@ -545,23 +319,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/partner/state",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"partner",
-						"state"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/partner/state"
 			},
 			"response": []
 		},
@@ -576,23 +334,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/partner/orders",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"partner",
-						"orders"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/partner/orders"
 			},
 			"response": []
 		},
@@ -607,22 +349,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/shops",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"shops"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/shops"
 			},
 			"response": []
 		},
@@ -637,22 +364,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/categories",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"categories"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/categories"
 			},
 			"response": []
 		},
@@ -667,22 +379,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/products",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"products"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/products"
 			},
 			"response": []
 		},
@@ -697,22 +394,7 @@
 						"type": "default"
 					}
 				],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/basket",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"basket"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/basket"
 			},
 			"response": []
 		},
@@ -729,29 +411,68 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"items\": \r\n        [\r\n            {\"product_info\": 1,\r\n            \"quantity\": 2}\r\n        ]\r\n}",
+					"raw": "{\r\n    \"items\": \r\n        [\r\n            {\"id\":1, \"product_info\": 9, \"quantity\":5}\r\n        ]\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
-							"language": "text"
+							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/basket",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"basket"
-					]
-				}
+				"url": "http://127.0.0.1:8000/api/v1/basket"
+			},
+			"response": []
+		},
+		{
+			"name": "basket",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": \r\n        [\r\n            {\"id\":1, \"product_info\": 9, \"quantity\":2}\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/v1/basket"
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/v1/order"
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 5d96861d60568d2eb7a2c635bc52d1e055d0786c",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/v1/order"
 			},
 			"response": []
 		}
